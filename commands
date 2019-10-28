@@ -1,3 +1,5 @@
 # Docker
 sudo docker build . --tag desiredImageName
 sudo docker run desiredImageName
+## Run the docker image in interactive mode with bash
+sudo docker run -it desiredImageName /bin/bash
