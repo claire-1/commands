@@ -40,7 +40,7 @@
 
     * $ cd tmp; ls; cd ..
 
-* # makes the rest of the line a comment, which is useful in shell scripting
+* \# makes the rest of the line a comment, which is useful in shell scripting
 
     * $ cd tmp # assuming tmp exists
 
@@ -210,7 +210,7 @@
 
                     * $ grep -l -r ingham --include "*.txt" literature
 
-                        * # use double quotes around "*.txt" so that the wildcard expansion isn’t done by the shell and instead of expression is passed to the command
+                        * \# use double quotes around "*.txt" so that the wildcard expansion isn’t done by the shell and instead of expression is passed to the command
 
         * -r (recursive)
 
@@ -420,11 +420,11 @@
 
             * cat > new_file
 
-            * # and then start typing b/c no file specified to cat so the keyboard (default STDIN) is used
+            * \# and then start typing b/c no file specified to cat so the keyboard (default STDIN) is used
 
-            * # press RETURN for new line
+            * \# press RETURN for new line
 
-            * # use ctrl-d for end-of-file b/c STDIN is a file
+            * \# use ctrl-d for end-of-file b/c STDIN is a file
 
     * redirecting input (STDIN) to take input from a file
 
@@ -446,9 +446,9 @@
 
             * cat /etc/passwd /etc/shadow > new 2>/dev/null
 
-            * # discard errors by redirecting to /dev/null
+            * \# discard errors by redirecting to /dev/null
 
-            * # cat two files at once (does cat on the first one followed directly by cat on the second one)
+            * \# cat two files at once (does cat on the first one followed directly by cat on the second one)
 
     * redirecting STDOUT and STDERR
 
@@ -460,11 +460,11 @@
 
             * date sfsf 2>&1 1> log
 
-                * # redirects STDERR to STDOUT (so both going to terminal) and then redirects STDOUT to log (so STDOUT goes to log and STDERR goes to terminal)
+                * \# redirects STDERR to STDOUT (so both going to terminal) and then redirects STDOUT to log (so STDOUT goes to log and STDERR goes to terminal)
 
             * date sfsf 1> log 2>&1
 
-                * # redirects STDOUT to log and then redirects STDERR to STDOUT (so both go to the log)
+                * \# redirects STDOUT to log and then redirects STDERR to STDOUT (so both go to the log)
 
     * redirection using "Here string"
 
@@ -500,7 +500,7 @@
 
         * $ ps aux | grep firefox | wc -l > output_file
 
-        * # wc -l takes input from grep firefox output and counts the lines in the file and stores that result in output_file
+        * \# wc -l takes input from grep firefox output and counts the lines in the file and stores that result in output_file
 
     * can input interactive commands with pipes (as the last operation)
 
@@ -526,9 +526,9 @@
 
         * cp [OPTION] SOURCE(S) DIRECTORY
 
-            * # $ cp assumes that if you specify multiple files, the last specified argument is a directory
+            * \# $ cp assumes that if you specify multiple files, the last specified argument is a directory
 
-            * # therefore, it will fail if the last specified argument isn’t a directory
+            * \# therefore, it will fail if the last specified argument isn’t a directory
 
     * examples:
 
@@ -746,7 +746,7 @@ b/c -R flag wasn’t used</td>
 
     * * matches zero or more characters
 
-        * $ ls /bin/cp* # gives all file stat start with cp in bin/
+        * $ ls /bin/cp*  # gives all file stat start with cp in bin/
 
     * [xyz] matches any single character in the set xyz → good for matching lower or uppercase version of the letter
 
@@ -947,7 +947,7 @@ to turn off</td>
 
     * $ who am i 
 
-        * # gives more info than whoami
+        * \# gives more info than whoami
 
 * $ id and $ groups
 
@@ -1303,7 +1303,7 @@ From lecture 3 slides:
 
         * inside hello.sh type:
 
-            * #!/bin/bash
+            * \#!/bin/bash
 
             * echo "Hello world!"
 
@@ -1333,11 +1333,11 @@ From lecture 3 slides:
 
     * ex//
 
-        * #!/bin/bash
+        * \#!/bin/bash
 
-        * #!/bin/sh
+        * \#!/bin/sh
 
-        * #!/usr/bin/python
+        * \#!/usr/bin/python
 
 * Exit with status
 
@@ -1963,7 +1963,7 @@ From lecture 3 slides:
 
                     * $ grep -E ‘^(pa){2,}’ /class/files/words
 
-                        * # (pa) allows you to look for pa next to each other only
+                        * \# (pa) allows you to look for pa next to each other only
 
         * Regex - logical or
 
@@ -2351,7 +2351,7 @@ From lecture 3 slides:
 
                 * $ false || false || echo "got here"
 
-                    * # will print got here instead of failing
+                    * \# will print got here instead of failing
 
         * $ set -x # shows all shell expansions as they happen, use +x to turn it back on
 
@@ -2477,7 +2477,7 @@ From lecture 3 slides:
 
         * $ tail -3 test.csv | awk -F , ‘{print $1,$3}’
 
-            * # prints the last three lines of test.csv, uses , as the field separator and then prints the first and third column
+            * \# prints the last three lines of test.csv, uses , as the field separator and then prints the first and third column
 
     * useful variables in awk
 
@@ -2643,7 +2643,7 @@ From lecture 3 slides:
 
                 * $ wget [https://s3.amazonaws.com/nyc-tlc/trip+data/green_tripdata_2016-01.csv](https://s3.amazonaws.com/nyc-tlc/trip+data/green_tripdata_2016-01.csv) 
 
-                    * # side note: use head, tail, less, and more commands to look at large files
+                    * \# side note: use head, tail, less, and more commands to look at large files
 
 * $ shasum and $ md5
 
@@ -2975,7 +2975,7 @@ From lecture 3 slides:
 
         * $ echo ‘foo bar baz’ | xargs mkdir
 
-            * # does mkdir on each item foo bar baz
+            * \# does mkdir on each item foo bar baz
 
     * often used with the find command
 
