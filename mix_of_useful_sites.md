@@ -14,6 +14,9 @@
 ## Example website
 - http://www.example.com/ (good for testing HTTP connections (not HTTPS))
 
+## Cron schedule desciption to help with the syntax
+- crontab.guru
+
 # Cool sites
 ## Go-style concurrency in C
 - https://github.com/sustrik/libmill
