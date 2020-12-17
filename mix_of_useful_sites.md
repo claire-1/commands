@@ -17,6 +17,11 @@
 ## Cron schedule desciption to help with the syntax
 - crontab.guru
 
-# Cool sites
+# Cool open-source technologies
 ## Go-style concurrency in C
 - https://github.com/sustrik/libmill
+
+# Engineering Philosophies
+## Arsty's playbooks (ruby application)
+https://github.com/artsy/README/tree/master/playbooks#readme
+
