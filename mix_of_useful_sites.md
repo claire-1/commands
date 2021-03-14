@@ -25,3 +25,6 @@
 ## Arsty's playbooks (ruby application)
 https://github.com/artsy/README/tree/master/playbooks#readme
 
+## On organizing retros 
+http://extfiles.etsy.com/DebriefingFacilitationGuide.pdf 
+
